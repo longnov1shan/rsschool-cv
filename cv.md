@@ -4,6 +4,8 @@
 * Gyurov 
 # Age
 * 32
+# Nickname
+* longnov1shan
 ## Contact 
 * +7 906 033 99 19
 ## Personal information 
@@ -11,7 +13,8 @@
 ### Skills 
 * _JavaScript (Node.js)_, _C++_, _SQL_, _MongoDB_, _TypeScript_
 ### SampleCode
-`//ejs Java script engine... 
+```javascript  
+//ejs Java script engine... 
 // add views folder, make profile view with extention ejs 
 //and take parameters and look how to 
 //insert them on ejs website frame
@@ -52,7 +55,8 @@ var data = {age:32, job: "jobless", hobbies: ['fishing','snorkling','titfucking'
 	console.log ('request was made : '+ req.url);
 });
 
-app.listen(3000);` 
+app.listen(3000);
+```  
 
 #### Experience
 * _No experience in coding_
@@ -73,4 +77,4 @@ app.listen(3000);`
 * _Russian - C2_
 
 ###### Photo
-!(C:\Users\Alexandr\YandexDisk\Photo_CV\CHEK7083 small.jpg)
+C:\Users\Alexandr\YandexDisk\Photo_CV\CHEK7083 small.jpg
