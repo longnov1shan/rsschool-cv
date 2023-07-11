@@ -77,4 +77,4 @@ app.listen(3000);
 * _Russian - C2_
 
 ###### Photo
-C:\Users\Alexandr\YandexDisk\Photo_CV\CHEK7083 small.jpg
+![alt text](https://imgur.com/VaXEecV)
