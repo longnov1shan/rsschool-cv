@@ -77,4 +77,4 @@ app.listen(3000);
 * _Russian - C2_
 
 ###### Photo
-[Imgur](https://i.imgur.com/VaXEecV.jpg)
+![image](https://i.imgur.com/VaXEecV.jpg)
