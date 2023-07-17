@@ -13,7 +13,7 @@
 ### Skills 
 * _JavaScript (Node.js)_, _C++_, _SQL_, _MongoDB_, _TypeScript_
 ### SampleCode
-```javascript  
+``` javascript  
 //ejs Java script engine... 
 // add views folder, make profile view with extention ejs 
 //and take parameters and look how to 
