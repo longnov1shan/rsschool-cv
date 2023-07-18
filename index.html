@@ -7,17 +7,12 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/favicon.ico">
     <link rel="photoCV" href="assets/CHEK7083 - Copy.jpg">
-    <style>
-        .profile-photo {
-              max-width: 200px;
-              height: auto;
-            }
-            </style>
+    <link href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
 </head>
 
 <body>
         <header>
-            
           <h1>Alexander Gyurov CV</h1>
           <nav>
             <ul>
@@ -27,6 +22,7 @@
               <li><a href="#experience">Experience</a></li>
               <li><a href="#education">Education</a></li>
               <li><a href="#lang">Languages</a></li>
+              <li><a href="#projects">Projects</a></li>
             </ul>
           </nav>
         </header>
@@ -71,7 +67,53 @@
             <p>Spanish-Intermediate</p>
             <p>Russian-Native</p>
             <p>Bulgarian-Elementary</p>
+          </section>
 
+          <section id="projects">
+            <h2>Projects</h2>
+            <pre>
+              <code class="language-javascript">
+var express = require ('express');
+
+var app = express();
+
+var bodyParser = require('body-parser')
+
+var urlencodedParser = bodyParser.urlencoded({ extended: false })
+
+ app.set('view engine', 'ejs');
+app.use('/my-first-javascript',express.static('my-first-javascript'));
+
+app.get('/',function (req,res){
+
+	res.render('index');
+	console.log ('request was made : '+ req.url);
+});
+
+app.get('/contact',function (req,res){
+	
+	res.render('contact', {qs:req.query});
+	
+});
+//body parsers 17 02 23
+app.post('/contact',urlencodedParser,function (req,res){
+	console.log (req.body);
+	res.render('contact-success', {data: req.body});
+	
+});
+
+app.get('/profile/:name',function (req,res){
+var data = {age:32, job: "jobless", hobbies: ['fishing','snorkling','titfucking']}
+	res.render('profile', {person: req.params.name, data:data});
+
+	console.log ('request was made : '+ req.url);
+});
+
+app.listen(3000);
+            
+              </code>
+            </pre>
+            
           </section>
       
           <section id="education">
@@ -83,7 +125,7 @@
             <ol>
               <li>Programming in blockchain (Solidity) - Moscow Coding School- 2018</li>
               <li>C++ advanced course - Coursera - 2020</li>
-              <li>JavaScript course - Codeacademy - 2022</li>
+              <li>JavaScript course - Code Academy - 2022</li>
               <li>TypeScript course - Ninja Youtube - 2023</li>
             </ol>
           </section>
@@ -92,8 +134,9 @@
         <footer>
           <p>
             <a href="https://github.com/longnov1shan">GitHub</a>
-            <span>&copy; 2023</span>
-            <a href="icon"><img src="assets/favicon.ico" alt="Course Logo"></a>
+             <a href="https://rs.school/js/">Course Link</a>
+            <span class="2023"> &copy; 2023</span>
+            <a href="icon"><img src="assets/favicon.ico" alt="Course Logo" class="footer-icon"></a>
           </p>
         </footer>
 </body>
