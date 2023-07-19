@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="assets/favicon.ico">
+    <link rel="icon" href="assets/favicon_new.ico">
     <link rel="photoCV" href="assets/CHEK7083 - Copy.jpg">
     <link href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
@@ -13,16 +13,19 @@
 
 <body>
         <header>
-          <h1>Alexander Gyurov CV</h1>
+         <div class="header">
+           <h1> Alexander Gyurov CV</h1>
+           </div>
           <nav>
-            <ul>
+            <ul class="no-dots-list">
               <li><a href="#about">About</a></li>
               <li><a href="#contact">Contact</a></li>
               <li><a href="#skills">Skills</a></li>
               <li><a href="#experience">Experience</a></li>
-              <li><a href="#education">Education</a></li>
               <li><a href="#lang">Languages</a></li>
               <li><a href="#projects">Projects</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#course">Courses</a></li>
             </ul>
           </nav>
         </header>
@@ -121,7 +124,7 @@ app.listen(3000);
             <ul>
               <li>State University of Management (Moscow, Russia)</li>
             </ul>
-            <h3>Courses</h3>
+            <h3 id="course">Courses</h3>
             <ol>
               <li>Programming in blockchain (Solidity) - Moscow Coding School- 2018</li>
               <li>C++ advanced course - Coursera - 2020</li>
@@ -135,7 +138,7 @@ app.listen(3000);
           <p>
             <a href="https://github.com/longnov1shan">GitHub</a>
              <a href="https://rs.school/js/">Course Link</a>
-            <span class="2023"> &copy; 2023</span>
+            <span class="2023"> &copy; 2023 &copy;</span>
             <a href="icon"><img src="assets/favicon.ico" alt="Course Logo" class="footer-icon"></a>
           </p>
         </footer>

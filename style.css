@@ -1,17 +1,32 @@
 
+.header{
+
+  border: 2px solid #ec9f234f
+}
 .profile-photo {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   border-radius: 100%;
   border: 2px solid #ec9f234f;
+  object-fit: cover;
   }
 
   .footer-icon {
     width: 60px; /* Adjust the width to make the icon smaller */
     height: 50px; /* Adjust the height to maintain aspect ratio */
 }
+.no-dots-list{
+  list-style:none;
+  text-align: left;
+  border: 2px solid #ec9f234f
+  
 
+}
 
+h1 {
+  font-family: 'Courier New', monospace;
+  text-align: left;
+}
 
   pre {
     background-color: #ec9f234f;
@@ -27,18 +42,25 @@
     padding: 0;
     justify-content: center;
     align-items: center;
+    background-color: #ec9f234f
 }
+
+
 
 header {
   text-align: center;
-  background-color: #f4f4f4;
   padding: 10px;
+  width: 100%; /* Set the width of the header to 100% of its parent container */
+  max-width: 1440px; /* Limit the maximum width of the header to 1440px (the original width) */
+  margin: 0 auto;
 }
 
 nav {
-  text-align: center;
-  background-color: #f4f4f4;
+  text-align: left;
   padding: 10px;
+  width: 100%; /* Set the width of the header to 100% of its parent container */
+  max-width: 1440px; /* Limit the maximum width of the header to 1440px (the original width) */
+  margin: 0 auto;
 }
 
 main {
@@ -55,4 +77,5 @@ footer {
             width: 100%; /* Set the width to occupy the available space */
             /* margin-left: auto; /* Align the footer to the right */
             /*margin-right: auto; /* Align the footer to the left */
-}
+
+          }
