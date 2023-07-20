@@ -66,10 +66,10 @@
 
           <section id="lang">
             <h2>Languages</h2>
-            <p>English-Advanced</p>
-            <p>Spanish-Intermediate</p>
-            <p>Russian-Native</p>
-            <p>Bulgarian-Elementary</p>
+            <p><b>Russian</b>-Native</p>
+            <p><b>English</b>-Advanced</p>
+            <p><b>Spanish</b>-Intermediate</p>
+            <p><b>Bulgarian</b>-Elementary</p>
           </section>
 
           <section id="projects">
@@ -106,7 +106,7 @@ app.post('/contact',urlencodedParser,function (req,res){
 });
 
 app.get('/profile/:name',function (req,res){
-var data = {age:32, job: "jobless", hobbies: ['fishing','snorkling','titfucking']}
+var data = {age:32, job: "jobless", hobbies: ['fishing','snorkling']}
 	res.render('profile', {person: req.params.name, data:data});
 
 	console.log ('request was made : '+ req.url);

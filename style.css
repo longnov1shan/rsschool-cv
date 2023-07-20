@@ -1,8 +1,5 @@
 
-.header{
 
-  border: 2px solid #ec9f234f
-}
 .profile-photo {
   width: 200px;
   height: 200px;
@@ -18,7 +15,8 @@
 .no-dots-list{
   list-style:none;
   text-align: left;
-  border: 2px solid #ec9f234f
+  position:relative;
+  right:50px;
   
 
 }
@@ -51,16 +49,17 @@ header {
   text-align: center;
   padding: 10px;
   width: 100%; /* Set the width of the header to 100% of its parent container */
-  max-width: 1440px; /* Limit the maximum width of the header to 1440px (the original width) */
+  max-width: 800px; /* Limit the maximum width of the header to 1440px (the original width) */
   margin: 0 auto;
 }
 
 nav {
-  text-align: left;
+  text-align: center;
   padding: 10px;
   width: 100%; /* Set the width of the header to 100% of its parent container */
-  max-width: 1440px; /* Limit the maximum width of the header to 1440px (the original width) */
+  max-width: 800px; /* Limit the maximum width of the header to 1440px (the original width) */
   margin: 0 auto;
+  line-height: 1.5em;
 }
 
 main {
@@ -73,8 +72,8 @@ footer {
   text-align: center;
   background-color: #ec9f234f;
   padding: 10px;
-  max-width: 1000px; /* Set the maximum width for the footer */
-            width: 100%; /* Set the width to occupy the available space */
+  max-width: 800px; /* Set the maximum width for the footer */
+  width: 100%; /* Set the width to occupy the available space */
             /* margin-left: auto; /* Align the footer to the right */
             /*margin-right: auto; /* Align the footer to the left */
 
